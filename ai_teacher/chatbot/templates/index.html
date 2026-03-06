@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Teacher</title>
+</head>
+<body>
+
+<h1>AI Teacher Chatbot</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="question" placeholder="Ask something">
+    <button type="submit">Ask</button>
+</form>
+
+<p>{{ answer }}</p>
+
+</body>
+</html>
